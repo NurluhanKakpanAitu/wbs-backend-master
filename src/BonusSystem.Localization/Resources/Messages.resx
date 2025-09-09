@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Error.ReplenishingWallet" xml:space="preserve"><value>Ошибка пополнения кошелька</value></data>
+
+  <data name="Email.CommissionNotification.Subject" xml:space="preserve">
+    <value>Уведомление о комиссии</value>
+  </data>
+  <data name="Email.CommissionNotification.Body" xml:space="preserve">
+    <value>Уважаемая компания {0},&#x0A;&#x0A;Сообщаем вам, что в системе начислена комиссия. Пожалуйста, ознакомьтесь с деталями в личном кабинете.&#x0A;&#x0A;С уважением,&#x0A;Администрация</value>
+  </data>
+
+  <data name="StoreNotFoundForSeller" xml:space="preserve"><value>Магазин не найден для продавца</value></data>
+  <data name="Error.InsufficientBonusBalance" xml:space="preserve"><value>Недостаточно бонусов</value></data>
+  <data name="Error.InsufficientFiatBalance" xml:space="preserve"><value>Недостаточно средств</value></data>
+  <data name="Error.InvalidFiatTransaction" xml:space="preserve"><value>Некорректная фиатная транзакция</value></data>
+  <data name="Error.InvalidSeller" xml:space="preserve"><value>Некорректный продавец</value></data>
+  <data name="Error.InvalidOrNonCompletedBonusTransaction" xml:space="preserve"><value>Некорректная или незавершённая бонусная транзакция</value></data>
+  <data name="Error.InvalidOrNonCompletedFiatTransaction" xml:space="preserve"><value>Некорректная или незавершённая фиатная транзакция</value></data>
+  <data name="Error.MustProvideBonusOrFiatTransactionId" xml:space="preserve"><value>Необходимо указать BonusTransactionId или FiatTransactionId</value></data>
+  <data name="Error.SellerNotAssignedToActiveStore" xml:space="preserve"><value>Продавец не привязан к активному магазину</value></data>
+  <data name="Error.InvalidBuyer" xml:space="preserve"><value>Некорректный покупатель</value></data>
+  <data name="Error.InvalidCompany" xml:space="preserve"><value>Некорректная компания</value></data>
+  <data name="Error.UserNotFoundWithId" xml:space="preserve"><value>Пользователь с ID {0} не найден</value></data>
+  <data name="Error.SenderNotFound" xml:space="preserve"><value>Отправитель не найден</value></data>
+  <data name="Error.RecipientNotFound" xml:space="preserve"><value>Получатель не найден</value></data>
+  <data name="Error.InsufficientBonusBalanceForTransfer" xml:space="preserve"><value>Недостаточно бонусов для перевода</value></data>
+  <data name="Error.FiatTransactionNotFound" xml:space="preserve"><value>Фиатная транзакция не найдена</value></data>
+  <data name="Error.NoPendingReturnRequestFound" xml:space="preserve"><value>Не найден ожидающий запрос на возврат</value></data>
+  <data name="Error.CompanyNotFound" xml:space="preserve"><value>Компания не найдена</value></data>
+  <data name="Error.FiatTransactionCannotBeReversed" xml:space="preserve"><value>Фиатную транзакцию нельзя отменить</value></data>
+  <data name="Error.TransactionNotFound" xml:space="preserve"><value>Транзакция не найдена</value></data>
+  <data name="Error.TransactionCannotBeReversed" xml:space="preserve"><value>Транзакцию нельзя отменить</value></data>
+  <data name="Error.TransactionNotFoundOrNotOwnedByBuyer" xml:space="preserve"><value>Транзакция не найдена или не принадлежит пользователю</value></data>
+  <data name="Error.TransactionNotPending" xml:space="preserve"><value>Транзакция не в ожидании</value></data>
+  <data name="Notification.ConfirmFiatTransactionAmount" xml:space="preserve"><value>Необходимо подтвердить фиатную транзакцию на сумму {0}</value></data>
+  <data name="Notification.BuyerConfirmedFiatTransactionAmount" xml:space="preserve"><value>Покупатель подтвердил фиатную транзакцию на сумму {0}</value></data>
+  <data name="Notification.BuyerConfirmedBonusTransactionAmount" xml:space="preserve"><value>Покупатель подтвердил бонусную транзакцию на сумму {0}</value></data>
+  <data name="Error.CompanyIdMustBeProvided" xml:space="preserve"><value>Необходимо указать ID компании</value></data>
+  <data name="Error.CompanyNotFoundWithId" xml:space="preserve"><value>Компания с ID {0} не найдена</value></data>
+  <data name="Info.NoTransactionsFound" xml:space="preserve"><value>Транзакции не найдены</value></data>
+  <data name="Error.CompanyNotFoundByParameters" xml:space="preserve"><value>Компания не найдена по заданным параметрам</value></data>
+  <data name="Error.CompanyWithIdNotActive" xml:space="preserve"><value>Компания с ID {0} не активна</value></data>
+  <data name="Error.EmailAlreadyInUse" xml:space="preserve"><value>Email {0} уже используется</value></data>
+  <data name="Email.SellerAccountReady.Subject" xml:space="preserve"><value>Ваш аккаунт продавца готов</value></data>
+  <data name="Email.SellerAccountReady.Body" xml:space="preserve"><value>Добро пожаловать! Ваш аккаунт продавца создан для {0}. Перейдите на страницу сброса пароля и используйте следующий код для его установки: {1}. Спасибо.</value></data>
+  <data name="Error.GettingUserContext" xml:space="preserve"><value>Ошибка получения контекста пользователя</value></data>
+  <data name="Error.CompanyIdNotFoundForUser" xml:space="preserve"><value>ID компании не найден для пользователя</value></data>
+  <data name="Error.GettingLastTransaction" xml:space="preserve"><value>Ошибка получения последней транзакции</value></data>
+  <data name="Error.ExportingCompanyStoreMetrics" xml:space="preserve"><value>Ошибка экспорта метрик магазина компании</value></data>
+  <data name="Error.GettingMonitoringData" xml:space="preserve"><value>Ошибка получения данных мониторинга</value></data>
+  <data name="Error.GettingStores" xml:space="preserve"><value>Ошибка получения магазинов</value></data>
+  <data name="Success.StoreRegistered" xml:space="preserve"><value>Магазин успешно зарегистрирован</value></data>
+  <data name="Error.StoreRegistrationFailed" xml:space="preserve"><value>Не удалось зарегистрировать магазин</value></data>
+  <data name="Error.RegisteringStore" xml:space="preserve"><value>Ошибка регистрации магазина</value></data>
+  <data name="Error.CompanyIdNotFoundForCurrentUser" xml:space="preserve"><value>ID компании не найден для текущего пользователя. Пользователь может не быть привязан к компании.</value></data>
+  <data name="Success.SellerRegistered" xml:space="preserve"><value>Продавец успешно зарегистрирован</value></data>
+  <data name="Error.SellerRegistrationFailed" xml:space="preserve"><value>Не удалось зарегистрировать продавца</value></data>
+  <data name="Error.RegisteringSeller" xml:space="preserve"><value>Ошибка регистрации продавца</value></data>
+  <data name="Error.GettingCompanyStatistics" xml:space="preserve"><value>Ошибка получения статистики компании</value></data>
+  <data name="Error.GettingTransactionSummary" xml:space="preserve"><value>Ошибка получения сводки транзакций</value></data>
+  <data name="Error.InvalidStoreStatusValue" xml:space="preserve"><value>Некорректное значение статуса магазина: {0}</value></data>
+  <data name="Error.GettingStoresWithSellers" xml:space="preserve"><value>Ошибка получения магазинов с продавцами</value></data>
+  <data name="Error.GettingFiatTransactionSummary" xml:space="preserve"><value>Ошибка получения сводки фиатных транзакций</value></data>
+  <data name="Error.ConnectionStringNotFound" xml:space="preserve"><value>Строка подключения не найдена в конфигурации</value></data>
+  <data name="Error.InvalidEmail" xml:space="preserve"><value>Неверный email</value></data>
+  <data name="Error.EmailNotVerified" xml:space="preserve"><value>Email не подтверждён</value></data>
+  <data name="Email.VerifyCode.Subject" xml:space="preserve"><value>Код подтверждения</value></data>
+  <data name="Success.Login" xml:space="preserve"><value>Вход выполнен</value></data>
+  <data name="Error.LoginGeneric" xml:space="preserve"><value>Произошла ошибка при входе</value></data>
+  <data name="Error.UserNotFound" xml:space="preserve"><value>Пользователь не найден</value></data>
+  <data name="Info.CheckYourEmail" xml:space="preserve"><value>Проверьте вашу почту</value></data>
+  <data name="Error.BuyerNotFound" xml:space="preserve"><value>Покупатель не найден</value></data>
+  <data name="Error.UpdatingBuyer" xml:space="preserve"><value>Ошибка обновления покупателя</value></data>
+  <data name="Error.PincodeInvalid" xml:space="preserve"><value>Неверный пин-код</value></data>
+  <data name="Email.VerificationCode.Subject" xml:space="preserve"><value>Код подтверждения email</value></data>
+  <data name="Email.VerificationCode.Body" xml:space="preserve"><value>Ваш код подтверждения: {0}</value></data>
+  <data name="Info.VerificationRequired" xml:space="preserve"><value>Требуется верификация</value></data>
+  <data name="Error.SignUpGeneric" xml:space="preserve"><value>Произошла ошибка при регистрации</value></data>
+  <data name="Error.InvalidCode" xml:space="preserve"><value>Неверный код</value></data>
+  <data name="Email.PasswordResetCode.Subject" xml:space="preserve"><value>Код для сброса пароля</value></data>
+  <data name="Email.PasswordResetCode.Body" xml:space="preserve"><value>Ваш код для сброса пароля: {0}</value></data>
+  <data name="Error.CodeInvalid" xml:space="preserve"><value>Код недействителен</value></data>
+  <data name="Success.CompanyUpdated" xml:space="preserve"><value>Компания обновлена</value></data>
+  <data name="Error.UpdatingCompany" xml:space="preserve"><value>Ошибка обновления компании</value></data>
+  <data name="Success.AdminAppointed" xml:space="preserve"><value>Администратор назначен</value></data>
+  <data name="Error.AppointingAdmin" xml:space="preserve"><value>Ошибка назначения администратора</value></data>
+  <data name="Error.SearchingCompanies" xml:space="preserve"><value>Ошибка поиска компаний</value></data>
+  <data name="Error.RegisteringCompany" xml:space="preserve"><value>Ошибка регистрации компании</value></data>
+  <data name="Error.CompanyStatusUpdateFailed" xml:space="preserve"><value>Не удалось обновить статус компании</value></data>
+  <data name="Success.CompanyStatusUpdated" xml:space="preserve"><value>Статус компании обновлён</value></data>
+  <data name="Error.UpdatingCompanyStatus" xml:space="preserve"><value>Ошибка обновления статуса компании</value></data>
+  <data name="Error.StoreModerationFailed" xml:space="preserve"><value>Не удалось модерировать магазин</value></data>
+  <data name="Success.StoreApproved" xml:space="preserve"><value>Магазин одобрен</value></data>
+  <data name="Success.StoreRejected" xml:space="preserve"><value>Магазин отклонён</value></data>
+  <data name="Error.ModeratingStore" xml:space="preserve"><value>Ошибка модерирования магазина</value></data>
+  <data name="Error.CompanyBalanceCreditFailed" xml:space="preserve"><value>Не удалось пополнить баланс компании</value></data>
+  <data name="Success.CompanyBalanceCredited" xml:space="preserve"><value>Баланс компании успешно пополнен</value></data>
+  <data name="Error.CreditingCompanyBalance" xml:space="preserve"><value>Ошибка пополнения баланса компании</value></data>
+  <data name="Error.GettingSystemTransactions" xml:space="preserve"><value>Ошибка получения системных транзакций</value></data>
+  <data name="Error.NotificationSendFailed" xml:space="preserve"><value>Не удалось отправить уведомление</value></data>
+  <data name="Success.NotificationSent" xml:space="preserve"><value>Уведомление отправлено</value></data>
+  <data name="Error.SendingNotification" xml:space="preserve"><value>Ошибка отправки уведомления</value></data>
+  <data name="Error.FeeCalculationQuery" xml:space="preserve"><value>Ошибка вычисления комиссии</value></data>
+  <data name="Error.GettingSystemFiatTransactions" xml:space="preserve"><value>Ошибка получения системных фиатных транзакций</value></data>
+  <data name="Success.BuyerUpdated" xml:space="preserve"><value>Данные покупателя обновлены</value></data>
+  <data name="Success.AdminLoggedIn" xml:space="preserve"><value>Администратор успешно вошёл</value></data>
+  <data name="Error.AdminLogin" xml:space="preserve"><value>Ошибка входа администратора</value></data>
+  <data name="Error.AdminVerification" xml:space="preserve"><value>Ошибка подтверждения администратора</value></data>
+  <data name="Error.BuyerRegistration" xml:space="preserve"><value>Ошибка регистрации покупателя</value></data>
+  <data name="Success.CodeSent" xml:space="preserve"><value>Код отправлен</value></data>
+  <data name="Error.SendCodeAgain" xml:space="preserve"><value>Ошибка повторной отправки кода</value></data>
+  <data name="Success.UserDeleted" xml:space="preserve"><value>Пользователь удалён</value></data>
+  <data name="Error.DeletingUser" xml:space="preserve"><value>Ошибка удаления пользователя</value></data>
+  <data name="Success.UserRegistered" xml:space="preserve"><value>Пользователь зарегистрирован</value></data>
+  <data name="Error.UserRegistration" xml:space="preserve"><value>Ошибка регистрации пользователя</value></data>
+  <data name="Success.UserLoggedIn" xml:space="preserve"><value>Пользователь вошёл</value></data>
+  <data name="Success.EmailVerified" xml:space="preserve"><value>Email подтверждён</value></data>
+  <data name="Success.ResetCodeSent" xml:space="preserve"><value>Код для сброса пароля отправлен</value></data>
+  <data name="Success.PincodeCreated" xml:space="preserve"><value>Пин-код создан</value></data>
+  <data name="Success.PasswordChanged" xml:space="preserve"><value>Пароль успешно изменён</value></data>
+  <data name="Error.GettingDateBonusRemoved" xml:space="preserve"><value>Ошибка получения даты списания бонусов</value></data>
+  <data name="Error.GettingNotifications" xml:space="preserve"><value>Ошибка получения уведомлений</value></data>
+  <data name="Error.GettingBalance" xml:space="preserve"><value>Ошибка получения баланса</value></data>
+  <data name="Error.GettingFiatBalance" xml:space="preserve"><value>Ошибка получения фиатного баланса</value></data>
+  <data name="Error.TransferringBonus" xml:space="preserve"><value>Ошибка перевода бонусов</value></data>
+  <data name="Error.GettingTransactions" xml:space="preserve"><value>Ошибка получения транзакций</value></data>
+  <data name="Error.GettingFiatTransactions" xml:space="preserve"><value>Ошибка получения фиатных транзакций</value></data>
+  <data name="Error.GeneratingQrCode" xml:space="preserve"><value>Ошибка генерации QR-кода</value></data>
+  <data name="Error.GettingCategories" xml:space="preserve"><value>Ошибка получения категорий</value></data>
+  <data name="Error.RetrievingPendingReturns" xml:space="preserve"><value>Ошибка получения возвратов, ожидающих подтверждения</value></data>
+  <data name="Error.RetrievingApprovedReturns" xml:space="preserve"><value>Ошибка получения подтверждённых возвратов</value></data>
+  <data name="Error.TransactionReturnApproveFailed" xml:space="preserve"><value>Не удалось одобрить возврат транзакции</value></data>
+  <data name="Success.FiatTransactionReturnApproved" xml:space="preserve"><value>Возврат фиатной транзакции одобрен</value></data>
+  <data name="Error.ApprovingFiatTransactionReturn" xml:space="preserve"><value>Ошибка одобрения возврата фиатной транзакции</value></data>
+  <data name="Success.BonusTransactionReturnApproved" xml:space="preserve"><value>Возврат бонусной транзакции одобрен</value></data>
+  <data name="Error.ApprovingBonusTransactionReturn" xml:space="preserve"><value>Ошибка одобрения возврата бонусной транзакции</value></data>
+  <data name="Error.TransactionReturnRejectFailed" xml:space="preserve"><value>Не удалось отклонить возврат транзакции</value></data>
+  <data name="Success.TransactionReturnRejected" xml:space="preserve"><value>Возврат транзакции отклонён</value></data>
+  <data name="Error.RejectingTransactionReturn" xml:space="preserve"><value>Ошибка отклонения возврата транзакции</value></data>
+  <data name="Error.FiatTransactionConfirmFailed" xml:space="preserve"><value>Не удалось подтвердить фиатную транзакцию</value></data>
+  <data name="Success.FiatTransactionConfirmed" xml:space="preserve"><value>Фиатная транзакция подтверждена, средства переведены</value></data>
+  <data name="Error.ConfirmingFiatTransaction" xml:space="preserve"><value>Ошибка подтверждения фиатной транзакции: {0}</value></data>
+  <data name="Error.BonusTransactionConfirmFailed" xml:space="preserve"><value>Не удалось подтвердить бонусную транзакцию</value></data>
+  <data name="Success.BonusTransactionConfirmed" xml:space="preserve"><value>Бонусная транзакция подтверждена, баллы переведены</value></data>
+  <data name="Error.ConfirmingBonusTransaction" xml:space="preserve"><value>Ошибка подтверждения бонусной транзакции: {0}</value></data>
+  <data name="Error.TypeOfBusinessNotFound" xml:space="preserve"><value>Тип бизнеса не найден.</value></data>
+  <data name="Error.AtLeastOneParameterRequired" xml:space="preserve"><value>Необходимо указать хотя бы один параметр</value></data>
+  <data name="PushNotification.UserNotFound" xml:space="preserve"><value>Пользователь не найден</value></data>
+  <data name="PushNotification.UserHasNoDeviceToken" xml:space="preserve"><value>У пользователя нет токена устройства</value></data>
+  <data name="PushNotification.NotificationSentSuccessfully" xml:space="preserve"><value>Уведомление успешно отправлено</value></data>
+  <data name="PushNotification.FailedToSendNotification" xml:space="preserve"><value>Не удалось отправить уведомление</value></data>
+  <data name="PushNotification.InternalServerError" xml:space="preserve"><value>Внутренняя ошибка сервера</value></data>
+  <data name="PushNotification.SentToUsersSummary" xml:space="preserve"><value>Отправлено {0} пользователям, не удалось отправить {1} пользователям</value></data>
+  <data name="PushNotification.NoUsersWithRoleHaveDeviceTokens" xml:space="preserve"><value>У пользователей с ролью {0} нет токенов устройств</value></data>
+  <data name="PushNotification.MethodNotImplementedYet" xml:space="preserve"><value>Метод еще не реализован</value></data>
+  <data name="PushNotification.TestNotificationSentSuccessfully" xml:space="preserve"><value>Тестовое уведомление успешно отправлено</value></data>
+  <data name="PushNotification.FailedToSendTestNotification" xml:space="preserve"><value>Не удалось отправить тестовое уведомление</value></data>
+  <data name="PushNotification.TestFailed" xml:space="preserve"><value>Тест не прошел: {0}</value></data>
+  <data name="PushNotification.FirebaseMessageSentSuccessfully" xml:space="preserve"><value>Сообщение Firebase успешно отправлено. ID сообщения: {0}</value></data>
+  <data name="PushNotification.DataMessageSentSuccessfully" xml:space="preserve"><value>Данные успешно отправлены</value></data>
+  <data name="PushNotification.FailedToSendDataMessage" xml:space="preserve"><value>Не удалось отправить данные</value></data>
+  <data name="PushNotification.DataMessageFailed" xml:space="preserve"><value>Отправка данных не удалась: {0}</value></data>
+  <data name="PushNotification.FirebaseDataMessageSentSuccessfully" xml:space="preserve"><value>Данные Firebase успешно отправлены. ID сообщения: {0}</value></data>
+  <data name="Common.UnknownStore" xml:space="preserve"><value>Неизвестный магазин</value></data>
+  <data name="PushNotification.TargetUserHasNoDeviceToken" xml:space="preserve"><value>У целевого пользователя нет зарегистрированного токена устройства</value></data>
+</root>
+
+

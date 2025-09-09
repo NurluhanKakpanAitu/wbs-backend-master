@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Error.ReplenishingWallet" xml:space="preserve"><value>Error replenishing wallet</value></data>
+
+  <data name="Email.CommissionNotification.Subject" xml:space="preserve">
+    <value>Commission Notification</value>
+  </data>
+  <data name="Email.CommissionNotification.Body" xml:space="preserve">
+    <value>Dear company {0},&#x0A;&#x0A;We would like to inform you that a commission has been applied in the system. Please check the details in your account.&#x0A;&#x0A;Best regards,&#x0A;Administration</value>
+  </data>
+
+  <data name="StoreNotFoundForSeller" xml:space="preserve"><value>Store not found for seller</value></data>
+  <data name="Error.InsufficientBonusBalance" xml:space="preserve"><value>Insufficient bonus balance</value></data>
+  <data name="Error.InsufficientFiatBalance" xml:space="preserve"><value>Insufficient fiat balance</value></data>
+  <data name="Error.InvalidFiatTransaction" xml:space="preserve"><value>Invalid fiat transaction</value></data>
+  <data name="Error.InvalidSeller" xml:space="preserve"><value>Invalid seller</value></data>
+  <data name="Error.InvalidOrNonCompletedBonusTransaction" xml:space="preserve"><value>Invalid or non-completed bonus transaction</value></data>
+  <data name="Error.InvalidOrNonCompletedFiatTransaction" xml:space="preserve"><value>Invalid or non-completed fiat transaction</value></data>
+  <data name="Error.MustProvideBonusOrFiatTransactionId" xml:space="preserve"><value>Must provide either BonusTransactionId or FiatTransactionId</value></data>
+  <data name="Error.SellerNotAssignedToActiveStore" xml:space="preserve"><value>Seller is not assigned to an active store</value></data>
+  <data name="Error.InvalidBuyer" xml:space="preserve"><value>Invalid buyer</value></data>
+  <data name="Error.InvalidCompany" xml:space="preserve"><value>Invalid company</value></data>
+  <data name="Error.UserNotFoundWithId" xml:space="preserve"><value>User with ID {0} not found</value></data>
+  <data name="Error.SenderNotFound" xml:space="preserve"><value>Sender not found</value></data>
+  <data name="Error.RecipientNotFound" xml:space="preserve"><value>Recipient not found</value></data>
+  <data name="Error.InsufficientBonusBalanceForTransfer" xml:space="preserve"><value>Insufficient bonus balance for transfer</value></data>
+  <data name="Error.FiatTransactionNotFound" xml:space="preserve"><value>Fiat transaction not found</value></data>
+  <data name="Error.NoPendingReturnRequestFound" xml:space="preserve"><value>No pending return request found</value></data>
+  <data name="Error.CompanyNotFound" xml:space="preserve"><value>Company not found</value></data>
+  <data name="Error.FiatTransactionCannotBeReversed" xml:space="preserve"><value>Fiat transaction cannot be reversed</value></data>
+  <data name="Error.TransactionNotFound" xml:space="preserve"><value>Transaction not found</value></data>
+  <data name="Error.TransactionCannotBeReversed" xml:space="preserve"><value>Transaction cannot be reversed</value></data>
+  <data name="Error.TransactionNotFoundOrNotOwnedByBuyer" xml:space="preserve"><value>Transaction not found or not owned by buyer</value></data>
+  <data name="Error.TransactionNotPending" xml:space="preserve"><value>Transaction is not pending</value></data>
+  <data name="Notification.ConfirmFiatTransactionAmount" xml:space="preserve"><value>You need to confirm the fiat transaction for the amount {0}</value></data>
+  <data name="Notification.BuyerConfirmedFiatTransactionAmount" xml:space="preserve"><value>Buyer confirmed fiat transaction for the amount {0}</value></data>
+  <data name="Notification.BuyerConfirmedBonusTransactionAmount" xml:space="preserve"><value>Buyer confirmed bonus transaction for the amount {0}</value></data>
+  <data name="Error.CompanyIdMustBeProvided" xml:space="preserve"><value>Company ID must be provided</value></data>
+  <data name="Error.CompanyNotFoundWithId" xml:space="preserve"><value>Company with ID {0} not found</value></data>
+  <data name="Info.NoTransactionsFound" xml:space="preserve"><value>No transactions found</value></data>
+  <data name="Error.CompanyNotFoundByParameters" xml:space="preserve"><value>Company not found by provided parameters</value></data>
+  <data name="Error.CompanyWithIdNotActive" xml:space="preserve"><value>Company with ID {0} is not active</value></data>
+  <data name="Error.EmailAlreadyInUse" xml:space="preserve"><value>Email {0} is already in use</value></data>
+  <data name="Email.SellerAccountReady.Subject" xml:space="preserve"><value>Your Seller Account is Ready</value></data>
+  <data name="Email.SellerAccountReady.Body" xml:space="preserve"><value>Welcome! Your seller account has been created for {0}. Please go to the password reset page and use the following code to set your password: {1}. Thank you.</value></data>
+  <data name="Error.GettingUserContext" xml:space="preserve"><value>Error getting user context</value></data>
+  <data name="Error.CompanyIdNotFoundForUser" xml:space="preserve"><value>Company ID not found for user</value></data>
+  <data name="Error.GettingLastTransaction" xml:space="preserve"><value>Error getting last transaction</value></data>
+  <data name="Error.ExportingCompanyStoreMetrics" xml:space="preserve"><value>Error exporting company store metrics</value></data>
+  <data name="Error.GettingMonitoringData" xml:space="preserve"><value>Error getting monitoring data</value></data>
+  <data name="Error.GettingStores" xml:space="preserve"><value>Error getting stores</value></data>
+  <data name="Success.StoreRegistered" xml:space="preserve"><value>Store registered successfully</value></data>
+  <data name="Error.StoreRegistrationFailed" xml:space="preserve"><value>Store registration failed</value></data>
+  <data name="Error.RegisteringStore" xml:space="preserve"><value>Error registering store</value></data>
+  <data name="Error.CompanyIdNotFoundForCurrentUser" xml:space="preserve"><value>Company ID not found for the current user. User may not be associated with a company.</value></data>
+  <data name="Success.SellerRegistered" xml:space="preserve"><value>Seller registered successfully</value></data>
+  <data name="Error.SellerRegistrationFailed" xml:space="preserve"><value>Seller registration failed</value></data>
+  <data name="Error.RegisteringSeller" xml:space="preserve"><value>Error registering seller</value></data>
+  <data name="Error.GettingCompanyStatistics" xml:space="preserve"><value>Error getting company statistics</value></data>
+  <data name="Error.GettingTransactionSummary" xml:space="preserve"><value>Error getting transaction summary</value></data>
+  <data name="Error.InvalidStoreStatusValue" xml:space="preserve"><value>Invalid store status value: {0}</value></data>
+  <data name="Error.GettingStoresWithSellers" xml:space="preserve"><value>Error getting stores with sellers</value></data>
+  <data name="Error.GettingFiatTransactionSummary" xml:space="preserve"><value>Error getting fiat transaction summary</value></data>
+  <data name="Error.ConnectionStringNotFound" xml:space="preserve"><value>Connection string not found in the configuration</value></data>
+  <data name="Error.InvalidEmail" xml:space="preserve"><value>Invalid email</value></data>
+  <data name="Error.EmailNotVerified" xml:space="preserve"><value>Email not verified</value></data>
+  <data name="Email.VerifyCode.Subject" xml:space="preserve"><value>Verify Code</value></data>
+  <data name="Success.Login" xml:space="preserve"><value>Login successful</value></data>
+  <data name="Error.LoginGeneric" xml:space="preserve"><value>An error occurred during user login</value></data>
+  <data name="Error.UserNotFound" xml:space="preserve"><value>User not found</value></data>
+  <data name="Info.CheckYourEmail" xml:space="preserve"><value>Check your email</value></data>
+  <data name="Error.BuyerNotFound" xml:space="preserve"><value>Buyer not found</value></data>
+  <data name="Error.UpdatingBuyer" xml:space="preserve"><value>Error updating buyer</value></data>
+  <data name="Error.PincodeInvalid" xml:space="preserve"><value>Pincode invalid</value></data>
+  <data name="Email.VerificationCode.Subject" xml:space="preserve"><value>Email verification code</value></data>
+  <data name="Email.VerificationCode.Body" xml:space="preserve"><value>Your verification code: {0}</value></data>
+  <data name="Info.VerificationRequired" xml:space="preserve"><value>Verification required</value></data>
+  <data name="Error.SignUpGeneric" xml:space="preserve"><value>An error occurred during registration</value></data>
+  <data name="Error.InvalidCode" xml:space="preserve"><value>Invalid code</value></data>
+  <data name="Email.PasswordResetCode.Subject" xml:space="preserve"><value>Password reset code</value></data>
+  <data name="Email.PasswordResetCode.Body" xml:space="preserve"><value>Your password reset code: {0}</value></data>
+  <data name="Error.CodeInvalid" xml:space="preserve"><value>Code invalid</value></data>
+  <data name="Success.CompanyUpdated" xml:space="preserve"><value>Company updated</value></data>
+  <data name="Error.UpdatingCompany" xml:space="preserve"><value>Error updating company</value></data>
+  <data name="Success.AdminAppointed" xml:space="preserve"><value>Admin appointed</value></data>
+  <data name="Error.AppointingAdmin" xml:space="preserve"><value>Error appointing admin</value></data>
+  <data name="Error.SearchingCompanies" xml:space="preserve"><value>Error searching companies</value></data>
+  <data name="Error.RegisteringCompany" xml:space="preserve"><value>Error registering company</value></data>
+  <data name="Error.CompanyStatusUpdateFailed" xml:space="preserve"><value>Company status could not be updated</value></data>
+  <data name="Success.CompanyStatusUpdated" xml:space="preserve"><value>Company status updated successfully</value></data>
+  <data name="Error.UpdatingCompanyStatus" xml:space="preserve"><value>Error updating company status</value></data>
+  <data name="Error.StoreModerationFailed" xml:space="preserve"><value>Store could not be moderated</value></data>
+  <data name="Success.StoreApproved" xml:space="preserve"><value>Store approved successfully</value></data>
+  <data name="Success.StoreRejected" xml:space="preserve"><value>Store rejected successfully</value></data>
+  <data name="Error.ModeratingStore" xml:space="preserve"><value>Error moderating store</value></data>
+  <data name="Error.CompanyBalanceCreditFailed" xml:space="preserve"><value>Company balance could not be credited</value></data>
+  <data name="Success.CompanyBalanceCredited" xml:space="preserve"><value>Company balance credited successfully</value></data>
+  <data name="Error.CreditingCompanyBalance" xml:space="preserve"><value>Error crediting company balance</value></data>
+  <data name="Error.GettingSystemTransactions" xml:space="preserve"><value>Error getting system transactions</value></data>
+  <data name="Error.NotificationSendFailed" xml:space="preserve"><value>Notification could not be sent</value></data>
+  <data name="Success.NotificationSent" xml:space="preserve"><value>Notification sent successfully</value></data>
+  <data name="Error.SendingNotification" xml:space="preserve"><value>Error sending notification</value></data>
+  <data name="Error.FeeCalculationQuery" xml:space="preserve"><value>Error at fee calculation query</value></data>
+  <data name="Error.GettingSystemFiatTransactions" xml:space="preserve"><value>Error getting system fiat transactions</value></data>
+  <data name="Success.BuyerUpdated" xml:space="preserve"><value>Buyer updated successfully</value></data>
+  <data name="Success.AdminLoggedIn" xml:space="preserve"><value>Admin logged in successfully</value></data>
+  <data name="Error.AdminLogin" xml:space="preserve"><value>Error during admin login</value></data>
+  <data name="Error.AdminVerification" xml:space="preserve"><value>Error during admin verification</value></data>
+  <data name="Error.BuyerRegistration" xml:space="preserve"><value>Error during buyer registration</value></data>
+  <data name="Success.CodeSent" xml:space="preserve"><value>Code sent successfully</value></data>
+  <data name="Error.SendCodeAgain" xml:space="preserve"><value>Error sending code again</value></data>
+  <data name="Success.UserDeleted" xml:space="preserve"><value>User deleted successfully</value></data>
+  <data name="Error.DeletingUser" xml:space="preserve"><value>Error deleting user</value></data>
+  <data name="Success.UserRegistered" xml:space="preserve"><value>User registered successfully</value></data>
+  <data name="Error.UserRegistration" xml:space="preserve"><value>Error during user registration</value></data>
+  <data name="Success.UserLoggedIn" xml:space="preserve"><value>User logged in successfully</value></data>
+  <data name="Success.EmailVerified" xml:space="preserve"><value>Email verified</value></data>
+  <data name="Success.ResetCodeSent" xml:space="preserve"><value>Reset code sent to email</value></data>
+  <data name="Success.PincodeCreated" xml:space="preserve"><value>Pincode created</value></data>
+  <data name="Success.PasswordChanged" xml:space="preserve"><value>Password changed successfully</value></data>
+  <data name="Error.GettingDateBonusRemoved" xml:space="preserve"><value>Error getting date bonus removed</value></data>
+  <data name="Error.GettingNotifications" xml:space="preserve"><value>Error getting notifications</value></data>
+  <data name="Error.GettingBalance" xml:space="preserve"><value>Error getting balance</value></data>
+  <data name="Error.GettingFiatBalance" xml:space="preserve"><value>Error getting fiat balance</value></data>
+  <data name="Error.TransferringBonus" xml:space="preserve"><value>Error transferring bonus</value></data>
+  <data name="Error.GettingTransactions" xml:space="preserve"><value>Error getting transactions</value></data>
+  <data name="Error.GettingFiatTransactions" xml:space="preserve"><value>Error getting fiat transactions</value></data>
+  <data name="Error.GeneratingQrCode" xml:space="preserve"><value>Error generating QR code</value></data>
+  <data name="Error.GettingCategories" xml:space="preserve"><value>Error getting categories</value></data>
+  <data name="Error.RetrievingPendingReturns" xml:space="preserve"><value>Error retrieving pending returns to approve</value></data>
+  <data name="Error.RetrievingApprovedReturns" xml:space="preserve"><value>Error retrieving approved returns</value></data>
+  <data name="Error.TransactionReturnApproveFailed" xml:space="preserve"><value>Transaction return could not be approved</value></data>
+  <data name="Success.FiatTransactionReturnApproved" xml:space="preserve"><value>Fiat transaction return approved successfully</value></data>
+  <data name="Error.ApprovingFiatTransactionReturn" xml:space="preserve"><value>Error approving fiat transaction return</value></data>
+  <data name="Success.BonusTransactionReturnApproved" xml:space="preserve"><value>Bonus transaction return approved successfully</value></data>
+  <data name="Error.ApprovingBonusTransactionReturn" xml:space="preserve"><value>Error approving bonus transaction return</value></data>
+  <data name="Error.TransactionReturnRejectFailed" xml:space="preserve"><value>Transaction return could not be rejected</value></data>
+  <data name="Success.TransactionReturnRejected" xml:space="preserve"><value>Transaction return rejected successfully</value></data>
+  <data name="Error.RejectingTransactionReturn" xml:space="preserve"><value>Error rejecting transaction return</value></data>
+  <data name="Error.FiatTransactionConfirmFailed" xml:space="preserve"><value>Fiat transaction could not be confirmed</value></data>
+  <data name="Success.FiatTransactionConfirmed" xml:space="preserve"><value>Fiat transaction confirmed and funds transferred</value></data>
+  <data name="Error.ConfirmingFiatTransaction" xml:space="preserve"><value>Error confirming fiat transaction: {0}</value></data>
+  <data name="Error.BonusTransactionConfirmFailed" xml:space="preserve"><value>Bonus transaction could not be confirmed</value></data>
+  <data name="Success.BonusTransactionConfirmed" xml:space="preserve"><value>Bonus transaction confirmed and points transferred</value></data>
+  <data name="Error.ConfirmingBonusTransaction" xml:space="preserve"><value>Error confirming bonus transaction: {0}</value></data>
+  <data name="Error.TypeOfBusinessNotFound" xml:space="preserve"><value>Type of business not found.</value></data>
+  <data name="Error.AtLeastOneParameterRequired" xml:space="preserve"><value>At least one parameter must be provided</value></data>
+  <data name="PushNotification.UserNotFound" xml:space="preserve"><value>User not found</value></data>
+  <data name="PushNotification.UserHasNoDeviceToken" xml:space="preserve"><value>User has no device token</value></data>
+  <data name="PushNotification.NotificationSentSuccessfully" xml:space="preserve"><value>Notification sent successfully</value></data>
+  <data name="PushNotification.FailedToSendNotification" xml:space="preserve"><value>Failed to send notification</value></data>
+  <data name="PushNotification.InternalServerError" xml:space="preserve"><value>Internal server error</value></data>
+  <data name="PushNotification.SentToUsersSummary" xml:space="preserve"><value>Sent to {0} users, failed for {1} users</value></data>
+  <data name="PushNotification.NoUsersWithRoleHaveDeviceTokens" xml:space="preserve"><value>No users with role {0} have device tokens</value></data>
+  <data name="PushNotification.MethodNotImplementedYet" xml:space="preserve"><value>Method not implemented yet</value></data>
+  <data name="PushNotification.TestNotificationSentSuccessfully" xml:space="preserve"><value>Test notification sent successfully</value></data>
+  <data name="PushNotification.FailedToSendTestNotification" xml:space="preserve"><value>Failed to send test notification</value></data>
+  <data name="PushNotification.TestFailed" xml:space="preserve"><value>Test failed: {0}</value></data>
+  <data name="PushNotification.FirebaseMessageSentSuccessfully" xml:space="preserve"><value>Firebase message sent successfully. Message ID: {0}</value></data>
+  <data name="PushNotification.DataMessageSentSuccessfully" xml:space="preserve"><value>Data message sent successfully</value></data>
+  <data name="PushNotification.FailedToSendDataMessage" xml:space="preserve"><value>Failed to send data message</value></data>
+  <data name="PushNotification.DataMessageFailed" xml:space="preserve"><value>Data message failed: {0}</value></data>
+  <data name="PushNotification.FirebaseDataMessageSentSuccessfully" xml:space="preserve"><value>Firebase data message sent successfully. Message ID: {0}</value></data>
+  <data name="Common.UnknownStore" xml:space="preserve"><value>Unknown Store</value></data>
+  <data name="PushNotification.TargetUserHasNoDeviceToken" xml:space="preserve"><value>Target user has no device token registered</value></data>
+</root>
+
+

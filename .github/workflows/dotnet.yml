@@ -1,0 +1,62 @@
+name: Bonus App – Compose Deploy
+
+on:
+  push:
+    branches: [ "master" ]  
+  workflow_dispatch:
+
+concurrency:
+  group: deploy-api
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: [self-hosted, linux, X64]   
+    timeout-minutes: 30
+
+    env:
+      COMPOSE_FILE: docker-compose.yml  
+      SERVICE: api                   
+      IMAGE: wbs-backend-api:latest       
+      NO_CACHE: "false"
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Diagnostics
+        run: |
+          set -euxo pipefail
+          docker --version
+          docker compose version
+
+      # Optional: if your compose file references a .env next to it, Compose will load it automatically.
+      # Nothing to do here unless you want to override envs via $GITHUB_ENV.
+
+      - name: Stop & remove existing service container
+        run: |
+          set -euxo pipefail
+          docker compose -f "$COMPOSE_FILE" ps "$SERVICE" || true
+          docker compose -f "$COMPOSE_FILE" stop "$SERVICE" || true
+          docker compose -f "$COMPOSE_FILE" rm -f "$SERVICE" || true
+
+      - name: Remove old image (optional)
+        run: |
+          set -euxo pipefail
+          docker image rm -f "$IMAGE" || true
+
+      - name: Build service image
+        run: |
+          set -euxo pipefail
+          if [ "$NO_CACHE" = "true" ]; then
+            docker compose -f "$COMPOSE_FILE" build --pull --no-cache "$SERVICE"
+          else
+            docker compose -f "$COMPOSE_FILE" build --pull "$SERVICE"
+          fi
+
+      - name: Start service (no deps)
+        run: |
+          set -euxo pipefail
+          docker compose -f "$COMPOSE_FILE" up -d --no-deps "$SERVICE"
+          docker compose -f "$COMPOSE_FILE" ps
+

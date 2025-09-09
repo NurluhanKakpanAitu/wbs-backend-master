@@ -1,0 +1,543 @@
+﻿# BonusSystem API Test Collection
+# ------------------------------------------------------------------------
+# DEMO INSTRUCTIONS
+# ------------------------------------------------------------------------
+# To use the extended demo with new companies, stores and sellers:
+# 1. First login as the Buyer (customer1@example.com) to get a token
+# 2. View all available stores using the "Find Stores by Category" request
+#    with parameter "category=all" - this will now show all active stores
+# 3. Login as different sellers (seller1@megamart.com, seller2@megamart.com) 
+#    to interact with different stores
+# 4. Use the requests in the EXTENDED DEMO OPERATIONS section to demonstrate 
+#    transactions across multiple companies and view the results
+# 
+# Enum Definitions:
+# - Company Status: 0=Pending, 1=Active, 2=Suspended, 3=Closed
+# - Transaction Type: 0=Earn, 1=Spend, 2=Expired, 3=SystemCredit, 4=Cancelled
+# - Notification Type: 0=System, 1=Transaction, 2=Balance, 3=Promotion, 4=Warning
+
+# Base Configuration
+@baseUrl = https://localhost:5002
+#@baseUrl = http://62.113.59.109:5001
+
+# Authentication Tokens (to be updated after login)
+@buyerToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI2NjY2NjY2Ni02NjY2LTY2NjYtNjY2Ni02NjY2NjY2NjY2NjYiLCJyb2xlIjoiQnV5ZXIiLCJuYmYiOjE3NDQ5NzUwMzMsImV4cCI6MTc3NjUxMTAzMywiaWF0IjoxNzQ0OTc1MDMzfQ.uViPRwdn4dR5Z-rd46yzrveKRgEdbQ_JS975bJHryC8
+@sellerToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiI0NDQ0NDQ0NC00NDQ0LTQ0NDQtNDQ0NC00NDQ0NDQ0NDQ0NDQiLCJyb2xlIjoiU2VsbGVyIiwibmJmIjoxNzQ0OTc1MDUxLCJleHAiOjE3NzY1MTEwNTEsImlhdCI6MTc0NDk3NTA1MX0.UpjPiPa-p5taRWkJ4dROUwDzELLiAODzjYNoFTRHIM0
+@adminToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIxMTExMTExMS0xMTExLTExMTEtMTExMS0xMTExMTExMTExMTEiLCJyb2xlIjoiU3lzdGVtQWRtaW4iLCJuYmYiOjE3NDQ5NzUwNjYsImV4cCI6MTc3NjUxMTA2NiwiaWF0IjoxNzQ0OTc1MDY2fQ.FlXWrubFYm7tkjv6XyZpLTrSxzT9aFM_ZPmwHqcQ4_Q
+@observerToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiIyMjIyMjIyMi0yMjIyLTIyMjItMjIyMi0yMjIyMjIyMjIyMjIiLCJyb2xlIjoiQ29tcGFueU9ic2VydmVyIiwibmJmIjoxNzQ0OTc1MDc4LCJleHAiOjE3NzY1MTEwNzgsImlhdCI6MTc0NDk3NTA3OH0.565bWsbkWZaSNoU0N5svIk-IzJ8qFT04ra-tLS5-WkU
+@companyToken = eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJuYW1laWQiOiJhYWFhYWJiYi1hYWFhLWFhYWEtYWFhYS1hYWFhYWFhYWFhYWEiLCJyb2xlIjoiQ29tcGFueSIsIkNvbXBhbnlJZCI6ImFhYWFhYWFhLWFhYWEtYWFhYS1hYWFhLWFhYWFhYWFhYWFhYSIsIm5iZiI6MTc0NTkyNTE4MywiZXhwIjoxNzc3NDYxMTgzLCJpYXQiOjE3NDU5MjUxODN9.TLdnbmF1ZH6eNFsdIKc26JZAWOGCXaUGtxVnOFgGKtQ
+
+###############################################
+# AUTHENTICATION WORKFLOWS
+###############################################
+
+# Login as Buyer
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "customer1@example.com",
+    "password": "Password123"
+}
+
+###
+
+# Login as Seller
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "seller1@megamart.com",
+    "password": "Password123"
+}
+
+###
+
+# Login as Admin
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "admin@bonussystem.com",
+    "password": "Password123"
+}
+
+###
+
+# Login as Observer
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "observer@megamart.com",
+    "password": "Password123"
+}
+
+###
+
+# Login as Company 
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "company@megamart.com",
+    "password": "Password123"
+}
+
+###############################################
+# BUYER OPERATIONS
+###############################################
+
+# Get Buyer Context
+GET {{baseUrl}}/api/buyers/context
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Get Buyer Balance
+GET {{baseUrl}}/api/buyers/balance
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Get Buyer Transaction History
+GET {{baseUrl}}/api/buyers/transactions
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Generate Buyer QR Code
+GET {{baseUrl}}/api/buyers/qrcode
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Find Stores by Category
+GET {{baseUrl}}/api/buyers/stores?category=all
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Cancel Specific Transaction
+POST {{baseUrl}}/api/buyers/transactions/11111111-aaaa-1111-aaaa-111111111111/cancel
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###############################################
+# SELLER OPERATIONS
+###############################################
+
+# Process Earn Transaction
+POST {{baseUrl}}/api/sellers/transactions/process
+Authorization: Bearer {{sellerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "buyerId": "66666666-6666-6666-6666-666666666666",
+    "bonusAmount": 150,
+    "totalCost": 1000,
+    "type": 0
+}
+
+###
+
+# Process Spend Transaction
+POST {{baseUrl}}/api/sellers/transactions/process
+Authorization: Bearer {{sellerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "buyerId": "66666666-6666-6666-6666-666666666666",
+    "bonusAmount": 50,
+    "totalCost": 1000,
+    "type": 1
+}
+
+###
+
+# Get Buyer Balance (Seller View)
+GET {{baseUrl}}/api/sellers/buyers/66666666-6666-6666-6666-666666666666/balance
+Authorization: Bearer {{sellerToken}}
+Accept: application/json
+
+###
+
+# Get Store Balance (using authenticated seller's identity)
+GET {{baseUrl}}/api/sellers/balance
+Authorization: Bearer {{sellerToken}}
+Accept: application/json
+
+###
+
+# Get Store Transactions (using authenticated seller's identity)
+GET {{baseUrl}}/api/sellers/transactions/list
+Authorization: Bearer {{sellerToken}}
+Accept: application/json
+
+###############################################
+# COMPANY OPERATIONS
+###############################################
+
+# Get All Stores with Sellers (No Filtering)
+# PageSize - stores per page
+# Page - page count
+POST {{baseUrl}}/api/companies/stores-with-sellers
+Authorization: Bearer {{companyToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "page": 1,
+    "pageSize": 2
+}
+
+###
+
+# Get Active Stores with Sellers
+# Statuses: 0 - Active, 1 - Inactive, 2 - Pending approval
+POST {{baseUrl}}/api/companies/stores-with-sellers
+Authorization: Bearer {{companyToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "storeStatus": 1,
+    "page": 1,
+    "pageSize": 10
+}
+
+###
+
+# Get Pending Approval Stores with Sellers
+POST {{baseUrl}}/api/companies/stores-with-sellers
+Authorization: Bearer {{companyToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "storeStatus": 0,
+    "page": 1,
+    "pageSize": 10
+}
+
+###
+
+# Get Company Context
+GET {{baseUrl}}/api/companies/context
+Authorization: Bearer {{companyToken}}
+Accept: application/json
+
+###
+
+# Register a New Store
+POST {{baseUrl}}/api/companies/stores
+Authorization: Bearer {{companyToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "companyId": "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA",
+    "name": "Downtown Store",
+    "location": "Downtown",
+    "address": "123 Main St, City, State 12345",
+    "contactPhone": "+1-555-444-3333",
+    "sellerIds": []
+}
+
+###
+
+# Register a New Seller
+POST {{baseUrl}}/api/companies/sellers
+Authorization: Bearer {{companyToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "username": "newseller1234",
+    "email": "newseller1234@megamart.com",
+    "password": "Seller123!"
+}
+
+###
+
+# Get Company Statistics
+GET {{baseUrl}}/api/companies/statistics?startDate=2025-01-01T00:00:00Z&endDate=2025-04-15T23:59:59Z
+Authorization: Bearer {{companyToken}}
+Accept: application/json
+
+###
+
+# Get Company Transaction Summary
+GET {{baseUrl}}/api/companies/transactions
+Authorization: Bearer {{companyToken}}
+Accept: application/json
+
+###############################################
+# ADMIN OPERATIONS
+###############################################
+
+# Fee calculations with null params
+POST {{baseUrl}}/api/admin/companies/transaction-fees
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "feePercent": 0.05,
+    "fromDate": null,
+    "endDate": null
+}
+
+###
+
+# Fee calculations with date params
+POST {{baseUrl}}/api/admin/companies/transaction-fees
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "feePercent": 0.05,
+  "fromDate": "2025-01-01T00:00:00Z",
+  "endDate": "2025-04-14T23:59:59Z"
+}
+
+###
+
+# Register New Company
+POST {{baseUrl}}/api/admin/companies
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "name": "New Test Company",
+    "contactEmail": "contact@newtestcompany.com",
+    "contactPhone": "+1-555-123-7890",
+    "initialBonusBalance": 500000
+}
+
+###
+
+# Update Company Status
+PUT {{baseUrl}}/api/admin/companies/AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA/status
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+1
+
+###
+
+# Create Pending Store Registration
+POST {{baseUrl}}/api/admin/stores
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "companyId": "AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA",
+    "name": "Pending Test Store",
+    "location": "Riverside",
+    "address": "789 River Rd, Anytown, AN 12345",
+    "contactPhone": "+1-555-789-0123",
+    "sellerIds": []
+}
+
+###
+
+# Moderate Store (Approve Pending Registration)
+PUT {{baseUrl}}/api/admin/stores/AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAB/moderate?approve=true
+Authorization: Bearer {{adminToken}}
+Accept: application/json
+
+###
+
+# Credit Company Balance
+POST {{baseUrl}}/api/admin/companies/AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA/credit
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+100000
+
+###
+
+# Get System Transactions
+GET {{baseUrl}}/api/admin/transactions?companyId=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
+Authorization: Bearer {{adminToken}}
+Accept: application/json
+
+###
+
+# Send System Notification
+POST {{baseUrl}}/api/admin/notifications?recipientId=66666666-6666-6666-6666-666666666666
+Authorization: Bearer {{adminToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "message": "Special promotion this weekend!",
+    "type": 3
+}
+
+###############################################
+# OBSERVER OPERATIONS
+###############################################
+
+# Get Observer Context
+GET {{baseUrl}}/api/observers/context
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###
+
+# Get System-Wide Statistics
+GET {{baseUrl}}/api/observers/statistics
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###
+
+# Get Transaction Summary
+GET {{baseUrl}}/api/observers/transactions/summary?companyId=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###
+
+# Get Companies Overview
+GET {{baseUrl}}/api/observers/companies
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###############################################
+# EXTENDED DEMO OPERATIONS
+###############################################
+
+# Find all available stores for buyers 
+# (this will show all the newly added stores)
+GET {{baseUrl}}/api/buyers/stores?category=all
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Login as another seller
+POST {{baseUrl}}/auth/login
+Content-Type: application/json
+Accept: application/json
+
+{
+    "email": "seller2@megamart.com",
+    "password": "Password123"
+}
+
+###
+
+# Process Earn Transaction as seller2
+# (Update the sellerToken with the token from the seller2 login)
+POST {{baseUrl}}/api/sellers/transactions/process
+Authorization: Bearer {{sellerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "buyerId": "66666666-6666-6666-6666-666666666666",
+    "totalCost": 1000,
+    "bonusAmount": 200,
+    "type": 0
+}
+
+###
+
+# Process Spend Transaction as seller2
+POST {{baseUrl}}/api/sellers/transactions/process
+Authorization: Bearer {{sellerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "buyerId": "66666666-6666-6666-6666-666666666666",
+    "totalCost": 1000,
+    "bonusAmount": 75,
+    "type": 1
+}
+
+###
+
+# Get Store Balance as seller2
+GET {{baseUrl}}/api/sellers/balance
+Authorization: Bearer {{sellerToken}}
+Accept: application/json
+
+###
+
+# Process Earn Transaction for another customer as seller2
+POST {{baseUrl}}/api/sellers/transactions/process
+Authorization: Bearer {{sellerToken}}
+Content-Type: application/json
+Accept: application/json
+
+{
+    "buyerId": "77777777-7777-7777-7777-777777777777",
+    "bonusAmount": 150,
+    "totalCost": 1000,
+    "type": 0
+}
+
+###
+
+# Get Store Transactions as seller2
+GET {{baseUrl}}/api/sellers/transactions/list
+Authorization: Bearer {{sellerToken}}
+Accept: application/json
+
+###
+
+# After all these transactions, check buyer's updated balance
+GET {{baseUrl}}/api/buyers/balance
+Authorization: Bearer {{buyerToken}}
+Accept: application/json
+
+###
+
+# Get all companies stats as an observer
+GET {{baseUrl}}/api/observers/companies
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###############################################
+# ADVANCED FILTERING
+###############################################
+
+# Filter Transactions by Date Range
+GET {{baseUrl}}/api/admin/transactions?startDate=2024-03-01&endDate=2024-04-15
+Authorization: Bearer {{adminToken}}
+Accept: application/json
+
+###
+
+# Get Company-Specific Statistics
+GET {{baseUrl}}/api/observers/statistics?companyId=AAAAAAAA-AAAA-AAAA-AAAA-AAAAAAAAAAAA&startDate=2024-01-01&endDate=2024-04-15
+Authorization: Bearer {{observerToken}}
+Accept: application/json
+
+###
+
+# Get TechHaven Company-Specific Statistics
+GET {{baseUrl}}/api/observers/statistics?companyId=BBBBBBBB-BBBB-BBBB-BBBB-BBBBBBBBBBBB
+Authorization: Bearer {{observerToken}}
+Accept: application/json

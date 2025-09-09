@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+
+  <data name="Error.ReplenishingWallet" xml:space="preserve"><value>әмиянды толтыру қатесі</value></data>
+
+  <data name="Email.CommissionNotification.Subject" xml:space="preserve">
+    <value>Комиссия туралы хабарлама</value>
+  </data>
+  <data name="Email.CommissionNotification.Body" xml:space="preserve">
+    <value>Құрметті {0} компаниясы,&#x0A;&#x0A;Жүйеде комиссия есептелгенін хабарлаймыз. Толығырақ ақпаратты жеке кабинеттен көре аласыз.&#x0A;&#x0A;Құрметпен,&#x0A;Әкімшілік</value>
+  </data>
+
+  <data name="StoreNotFoundForSeller" xml:space="preserve"><value>Сатушы үшін дүкен табылмады</value></data>
+  <data name="Error.InsufficientBonusBalance" xml:space="preserve"><value>Бонус жеткіліксіз</value></data>
+  <data name="Error.InsufficientFiatBalance" xml:space="preserve"><value>Қаражат жеткіліксіз</value></data>
+  <data name="Error.InvalidFiatTransaction" xml:space="preserve"><value>Дұрыс емес фиаттық транзакция</value></data>
+  <data name="Error.InvalidSeller" xml:space="preserve"><value>Дұрыс емес сатушы</value></data>
+  <data name="Error.InvalidOrNonCompletedBonusTransaction" xml:space="preserve"><value>Дұрыс емес немесе аяқталмаған бонус транзакциясы</value></data>
+  <data name="Error.InvalidOrNonCompletedFiatTransaction" xml:space="preserve"><value>Дұрыс емес немесе аяқталмаған фиаттық транзакция</value></data>
+  <data name="Error.MustProvideBonusOrFiatTransactionId" xml:space="preserve"><value>BonusTransactionId немесе FiatTransactionId көрсету қажет</value></data>
+  <data name="Error.SellerNotAssignedToActiveStore" xml:space="preserve"><value>Сатушы белсенді дүкенге байланыстырылмаған</value></data>
+  <data name="Error.InvalidBuyer" xml:space="preserve"><value>Дұрыс емес сатып алушы</value></data>
+  <data name="Error.InvalidCompany" xml:space="preserve"><value>Дұрыс емес компания</value></data>
+  <data name="Error.UserNotFoundWithId" xml:space="preserve"><value>{0} ID бар пайдаланушы табылмады</value></data>
+  <data name="Error.SenderNotFound" xml:space="preserve"><value>Жіберуші табылмады</value></data>
+  <data name="Error.RecipientNotFound" xml:space="preserve"><value>Алушы табылмады</value></data>
+  <data name="Error.InsufficientBonusBalanceForTransfer" xml:space="preserve"><value>Аударым үшін бонус жеткіліксіз</value></data>
+  <data name="Error.FiatTransactionNotFound" xml:space="preserve"><value>Фиаттық транзакция табылмады</value></data>
+  <data name="Error.NoPendingReturnRequestFound" xml:space="preserve"><value>Күтілуде тұрған қайтару сұранысы табылмады</value></data>
+  <data name="Error.CompanyNotFound" xml:space="preserve"><value>Компания табылмады</value></data>
+  <data name="Error.FiatTransactionCannotBeReversed" xml:space="preserve"><value>Фиаттық транзакцияны кері қайтаруға болмайды</value></data>
+  <data name="Error.TransactionNotFound" xml:space="preserve"><value>Транзакция табылмады</value></data>
+  <data name="Error.TransactionCannotBeReversed" xml:space="preserve"><value>Транзакцияны кері қайтаруға болмайды</value></data>
+  <data name="Error.TransactionNotFoundOrNotOwnedByBuyer" xml:space="preserve"><value>Транзакция табылмады немесе пайдаланушыға тиесілі емес</value></data>
+  <data name="Error.TransactionNotPending" xml:space="preserve"><value>Транзакция күтілуде емес</value></data>
+  <data name="Notification.ConfirmFiatTransactionAmount" xml:space="preserve"><value>{0} сомаға фиаттық транзакцияны растау қажет</value></data>
+  <data name="Notification.BuyerConfirmedFiatTransactionAmount" xml:space="preserve"><value>Сатып алушы {0} сомаға фиаттық транзакцияны растады</value></data>
+  <data name="Notification.BuyerConfirmedBonusTransactionAmount" xml:space="preserve"><value>Сатып алушы {0} сомаға бонус транзакциясын растады</value></data>
+  <data name="Error.CompanyIdMustBeProvided" xml:space="preserve"><value>Компания ID көрсету қажет</value></data>
+  <data name="Error.CompanyNotFoundWithId" xml:space="preserve"><value>{0} ID бар компания табылмады</value></data>
+  <data name="Info.NoTransactionsFound" xml:space="preserve"><value>Транзакциялар табылмады</value></data>
+  <data name="Error.CompanyNotFoundByParameters" xml:space="preserve"><value>Көрсетілген параметрлер бойынша компания табылмады</value></data>
+  <data name="Error.CompanyWithIdNotActive" xml:space="preserve"><value>{0} ID бар компания белсенді емес</value></data>
+  <data name="Error.EmailAlreadyInUse" xml:space="preserve"><value>Email {0} бұрыннан қолданыста</value></data>
+  <data name="Email.SellerAccountReady.Subject" xml:space="preserve"><value>Сатушы аккаунты дайын</value></data>
+  <data name="Email.SellerAccountReady.Body" xml:space="preserve"><value>Қош келдіңіз! Сіздің сатушы аккаунтыңыз {0} үшін жасалды. Құпиясөзді орнату үшін мына кодты пайдаланыңыз: {1}. Рақмет.</value></data>
+  <data name="Error.GettingUserContext" xml:space="preserve"><value>Пайдаланушы контекстін алу қатесі</value></data>
+  <data name="Error.CompanyIdNotFoundForUser" xml:space="preserve"><value>Пайдаланушы үшін компания ID табылмады</value></data>
+  <data name="Error.GettingLastTransaction" xml:space="preserve"><value>Соңғы транзакцияны алу қатесі</value></data>
+  <data name="Error.ExportingCompanyStoreMetrics" xml:space="preserve"><value>Компания дүкен метрикасын экспорттау қатесі</value></data>
+  <data name="Error.GettingMonitoringData" xml:space="preserve"><value>Мониторинг деректерін алу қатесі</value></data>
+  <data name="Error.GettingStores" xml:space="preserve"><value>Дүкендерді алу қатесі</value></data>
+  <data name="Success.StoreRegistered" xml:space="preserve"><value>Дүкен сәтті тіркелді</value></data>
+  <data name="Error.StoreRegistrationFailed" xml:space="preserve"><value>Дүкенді тіркеу мүмкін болмады</value></data>
+  <data name="Error.RegisteringStore" xml:space="preserve"><value>Дүкенді тіркеу қатесі</value></data>
+  <data name="Error.CompanyIdNotFoundForCurrentUser" xml:space="preserve"><value>Ағымдағы пайдаланушы үшін компания ID табылмады. Пайдаланушы компанияға байланыстырылмауы мүмкін.</value></data>
+  <data name="Success.SellerRegistered" xml:space="preserve"><value>Сатушы сәтті тіркелді</value></data>
+  <data name="Error.SellerRegistrationFailed" xml:space="preserve"><value>Сатушыны тіркеу мүмкін болмады</value></data>
+  <data name="Error.RegisteringSeller" xml:space="preserve"><value>Сатушыны тіркеу қатесі</value></data>
+  <data name="Error.GettingCompanyStatistics" xml:space="preserve"><value>Компания статистикасын алу қатесі</value></data>
+  <data name="Error.GettingTransactionSummary" xml:space="preserve"><value>Транзакциялар қорытындысын алу қатесі</value></data>
+  <data name="Error.InvalidStoreStatusValue" xml:space="preserve"><value>Дүкен күйінің мәні дұрыс емес: {0}</value></data>
+  <data name="Error.GettingStoresWithSellers" xml:space="preserve"><value>Дүкендер мен сатушыларды алу қатесі</value></data>
+  <data name="Error.GettingFiatTransactionSummary" xml:space="preserve"><value>Фиаттық транзакциялар қорытындысын алу қатесі</value></data>
+  <data name="Error.ConnectionStringNotFound" xml:space="preserve"><value>Қосылу жолы конфигурацияда табылмады</value></data>
+  <data name="Error.InvalidEmail" xml:space="preserve"><value>Жарамсыз email</value></data>
+  <data name="Error.EmailNotVerified" xml:space="preserve"><value>Email расталмаған</value></data>
+  <data name="Email.VerifyCode.Subject" xml:space="preserve"><value>Растау коды</value></data>
+  <data name="Success.Login" xml:space="preserve"><value>Кіру сәтті</value></data>
+  <data name="Error.LoginGeneric" xml:space="preserve"><value>Кіру кезінде қате орын алды</value></data>
+  <data name="Error.UserNotFound" xml:space="preserve"><value>Пайдаланушы табылмады</value></data>
+  <data name="Info.CheckYourEmail" xml:space="preserve"><value>Электрондық поштаңызды тексеріңіз</value></data>
+  <data name="Error.BuyerNotFound" xml:space="preserve"><value>Сатып алушы табылмады</value></data>
+  <data name="Error.UpdatingBuyer" xml:space="preserve"><value>Сатып алушыны жаңарту қатесі</value></data>
+  <data name="Error.PincodeInvalid" xml:space="preserve"><value>Жарамсыз пин-код</value></data>
+  <data name="Email.VerificationCode.Subject" xml:space="preserve"><value>Email растау коды</value></data>
+  <data name="Email.VerificationCode.Body" xml:space="preserve"><value>Сіздің растау кодыңыз: {0}</value></data>
+  <data name="Info.VerificationRequired" xml:space="preserve"><value>Верификация қажет</value></data>
+  <data name="Error.SignUpGeneric" xml:space="preserve"><value>Тіркелу кезінде қате орын алды</value></data>
+  <data name="Error.InvalidCode" xml:space="preserve"><value>Жарамсыз код</value></data>
+  <data name="Email.PasswordResetCode.Subject" xml:space="preserve"><value>Құпиясөзді қалпына келтіру коды</value></data>
+  <data name="Email.PasswordResetCode.Body" xml:space="preserve"><value>Құпиясөзді қалпына келтіру коды: {0}</value></data>
+  <data name="Error.CodeInvalid" xml:space="preserve"><value>Код жарамсыз</value></data>
+  <data name="Success.CompanyUpdated" xml:space="preserve"><value>Компания жаңартылды</value></data>
+  <data name="Error.UpdatingCompany" xml:space="preserve"><value>Компанияны жаңарту қатесі</value></data>
+  <data name="Success.AdminAppointed" xml:space="preserve"><value>Әкімші тағайындалды</value></data>
+  <data name="Error.AppointingAdmin" xml:space="preserve"><value>Әкімшіні тағайындау қатесі</value></data>
+  <data name="Error.SearchingCompanies" xml:space="preserve"><value>Компанияларды іздеу қатесі</value></data>
+  <data name="Error.RegisteringCompany" xml:space="preserve"><value>Компанияны тіркеу қатесі</value></data>
+  <data name="Error.CompanyStatusUpdateFailed" xml:space="preserve"><value>Компания күйін жаңарту мүмкін болмады</value></data>
+  <data name="Success.CompanyStatusUpdated" xml:space="preserve"><value>Компания күйі жаңартылды</value></data>
+  <data name="Error.UpdatingCompanyStatus" xml:space="preserve"><value>Компания күйін жаңарту қатесі</value></data>
+  <data name="Error.StoreModerationFailed" xml:space="preserve"><value>Дүкенді модерациялау мүмкін болмады</value></data>
+  <data name="Success.StoreApproved" xml:space="preserve"><value>Дүкен мақұлданды</value></data>
+  <data name="Success.StoreRejected" xml:space="preserve"><value>Дүкен қабылданбады</value></data>
+  <data name="Error.ModeratingStore" xml:space="preserve"><value>Дүкенді модерациялау қатесі</value></data>
+  <data name="Error.CompanyBalanceCreditFailed" xml:space="preserve"><value>Компания балансына ақша аудару мүмкін болмады</value></data>
+  <data name="Success.CompanyBalanceCredited" xml:space="preserve"><value>Компания балансы толтырылды</value></data>
+  <data name="Error.CreditingCompanyBalance" xml:space="preserve"><value>Компания балансын толтыру қатесі</value></data>
+  <data name="Error.GettingSystemTransactions" xml:space="preserve"><value>Жүйелік транзакцияларды алу қатесі</value></data>
+  <data name="Error.NotificationSendFailed" xml:space="preserve"><value>Хабарламаны жіберу мүмкін болмады</value></data>
+  <data name="Success.NotificationSent" xml:space="preserve"><value>Хабарлама жіберілді</value></data>
+  <data name="Error.SendingNotification" xml:space="preserve"><value>Хабарламаны жіберу қатесі</value></data>
+  <data name="Error.FeeCalculationQuery" xml:space="preserve"><value>Комиссияны есептеу қатесі</value></data>
+  <data name="Error.GettingSystemFiatTransactions" xml:space="preserve"><value>Жүйелік фиаттық транзакцияларды алу қатесі</value></data>
+  <data name="Success.BuyerUpdated" xml:space="preserve"><value>Сатып алушы деректері жаңартылды</value></data>
+  <data name="Success.AdminLoggedIn" xml:space="preserve"><value>Әкімші сәтті кірді</value></data>
+  <data name="Error.AdminLogin" xml:space="preserve"><value>Әкімші кіру қатесі</value></data>
+  <data name="Error.AdminVerification" xml:space="preserve"><value>Әкімшіні растау қатесі</value></data>
+  <data name="Error.BuyerRegistration" xml:space="preserve"><value>Сатып алушыны тіркеу қатесі</value></data>
+  <data name="Success.CodeSent" xml:space="preserve"><value>Код жіберілді</value></data>
+  <data name="Error.SendCodeAgain" xml:space="preserve"><value>Кодты қайта жіберу қатесі</value></data>
+  <data name="Success.UserDeleted" xml:space="preserve"><value>Пайдаланушы жойылды</value></data>
+  <data name="Error.DeletingUser" xml:space="preserve"><value>Пайдаланушыны жою қатесі</value></data>
+  <data name="Success.UserRegistered" xml:space="preserve"><value>Пайдаланушы тіркелді</value></data>
+  <data name="Error.UserRegistration" xml:space="preserve"><value>Пайдаланушыны тіркеу қатесі</value></data>
+  <data name="Success.UserLoggedIn" xml:space="preserve"><value>Пайдаланушы кірді</value></data>
+  <data name="Success.EmailVerified" xml:space="preserve"><value>Email расталды</value></data>
+  <data name="Success.ResetCodeSent" xml:space="preserve"><value>Қалпына келтіру коды жіберілді</value></data>
+  <data name="Success.PincodeCreated" xml:space="preserve"><value>Пин-код жасалды</value></data>
+  <data name="Success.PasswordChanged" xml:space="preserve"><value>Құпиясөз сәтті өзгертілді</value></data>
+  <data name="Error.GettingDateBonusRemoved" xml:space="preserve"><value>Бонус есептен шығару күнін алу қатесі</value></data>
+  <data name="Error.GettingNotifications" xml:space="preserve"><value>Хабарламаларды алу қатесі</value></data>
+  <data name="Error.GettingBalance" xml:space="preserve"><value>Баланс алу қатесі</value></data>
+  <data name="Error.GettingFiatBalance" xml:space="preserve"><value>Фиаттық баланс алу қатесі</value></data>
+  <data name="Error.TransferringBonus" xml:space="preserve"><value>Бонус аудару қатесі</value></data>
+  <data name="Error.GettingTransactions" xml:space="preserve"><value>Транзакцияларды алу қатесі</value></data>
+  <data name="Error.GettingFiatTransactions" xml:space="preserve"><value>Фиаттық транзакцияларды алу қатесі</value></data>
+  <data name="Error.GeneratingQrCode" xml:space="preserve"><value>QR-код генерациялау қатесі</value></data>
+  <data name="Error.GettingCategories" xml:space="preserve"><value>Санаттарды алу қатесі</value></data>
+  <data name="Error.RetrievingPendingReturns" xml:space="preserve"><value>Растау күтіп тұрған қайтаруларды алу қатесі</value></data>
+  <data name="Error.RetrievingApprovedReturns" xml:space="preserve"><value>Расталған қайтаруларды алу қатесі</value></data>
+  <data name="Error.TransactionReturnApproveFailed" xml:space="preserve"><value>Транзакция қайтаруын мақұлдау мүмкін болмады</value></data>
+  <data name="Success.FiatTransactionReturnApproved" xml:space="preserve"><value>Фиаттық транзакция қайтаруы мақұлданды</value></data>
+  <data name="Error.ApprovingFiatTransactionReturn" xml:space="preserve"><value>Фиаттық транзакция қайтаруын мақұлдау қатесі</value></data>
+  <data name="Success.BonusTransactionReturnApproved" xml:space="preserve"><value>Бонус транзакция қайтаруы мақұлданды</value></data>
+  <data name="Error.ApprovingBonusTransactionReturn" xml:space="preserve"><value>Бонус транзакция қайтаруын мақұлдау қатесі</value></data>
+  <data name="Error.TransactionReturnRejectFailed" xml:space="preserve"><value>Транзакция қайтаруын қабылдамау мүмкін болмады</value></data>
+  <data name="Success.TransactionReturnRejected" xml:space="preserve"><value>Транзакция қайтаруы қабылданбады</value></data>
+  <data name="Error.RejectingTransactionReturn" xml:space="preserve"><value>Транзакция қайтаруын қабылдамау қатесі</value></data>
+  <data name="Error.FiatTransactionConfirmFailed" xml:space="preserve"><value>Фиаттық транзакцияны растау мүмкін болмады</value></data>
+  <data name="Success.FiatTransactionConfirmed" xml:space="preserve"><value>Фиаттық транзакция расталды және қаражат аударылды</value></data>
+  <data name="Error.ConfirmingFiatTransaction" xml:space="preserve"><value>Фиаттық транзакцияны растау қатесі: {0}</value></data>
+  <data name="Error.BonusTransactionConfirmFailed" xml:space="preserve"><value>Бонус транзакцияны растау мүмкін болмады</value></data>
+  <data name="Success.BonusTransactionConfirmed" xml:space="preserve"><value>Бонус транзакция расталды және баллдар аударылды</value></data>
+  <data name="Error.ConfirmingBonusTransaction" xml:space="preserve"><value>Бонус транзакцияны растау қатесі: {0}</value></data>
+  <data name="Error.TypeOfBusinessNotFound" xml:space="preserve"><value>Бизнес түрі табылмады.</value></data>
+  <data name="Error.AtLeastOneParameterRequired" xml:space="preserve"><value>Кемінде бір параметр көрсету қажет</value></data>
+  <data name="PushNotification.UserNotFound" xml:space="preserve"><value>Пайдаланушы табылмады</value></data>
+  <data name="PushNotification.UserHasNoDeviceToken" xml:space="preserve"><value>Пайдаланушыда құрылғы токені жоқ</value></data>
+  <data name="PushNotification.NotificationSentSuccessfully" xml:space="preserve"><value>Хабарландыру сәтті жіберілді</value></data>
+  <data name="PushNotification.FailedToSendNotification" xml:space="preserve"><value>Хабарландыру жіберу мүмкін болмады</value></data>
+  <data name="PushNotification.InternalServerError" xml:space="preserve"><value>Сервердің ішкі қатесі</value></data>
+  <data name="PushNotification.SentToUsersSummary" xml:space="preserve"><value>{0} пайдаланушыға жіберілді, {1} пайдаланушыға жіберу мүмкін болмады</value></data>
+  <data name="PushNotification.NoUsersWithRoleHaveDeviceTokens" xml:space="preserve"><value>{0} рөлі бар пайдаланушыларда құрылғы токендері жоқ</value></data>
+  <data name="PushNotification.MethodNotImplementedYet" xml:space="preserve"><value>Әдіс әзірге жүзеге асырылмаған</value></data>
+  <data name="PushNotification.TestNotificationSentSuccessfully" xml:space="preserve"><value>Сынақ хабарландыруы сәтті жіберілді</value></data>
+  <data name="PushNotification.FailedToSendTestNotification" xml:space="preserve"><value>Сынақ хабарландыруын жіберу мүмкін болмады</value></data>
+  <data name="PushNotification.TestFailed" xml:space="preserve"><value>Сынақ сәтсіз: {0}</value></data>
+  <data name="PushNotification.FirebaseMessageSentSuccessfully" xml:space="preserve"><value>Firebase хабарламасы сәтті жіберілді. Хабарлама ID: {0}</value></data>
+  <data name="PushNotification.DataMessageSentSuccessfully" xml:space="preserve"><value>Деректер сәтті жіберілді</value></data>
+  <data name="PushNotification.FailedToSendDataMessage" xml:space="preserve"><value>Деректерді жіберу мүмкін болмады</value></data>
+  <data name="PushNotification.DataMessageFailed" xml:space="preserve"><value>Деректерді жіберу сәтсіз: {0}</value></data>
+  <data name="PushNotification.FirebaseDataMessageSentSuccessfully" xml:space="preserve"><value>Firebase деректер хабарламасы сәтті жіберілді. Хабарлама ID: {0}</value></data>
+  <data name="Common.UnknownStore" xml:space="preserve"><value>Белгісіз дүкен</value></data>
+  <data name="PushNotification.TargetUserHasNoDeviceToken" xml:space="preserve"><value>Мақсатты пайдаланушыда тіркелген құрылғы токені жоқ</value></data>
+</root>
+
+
