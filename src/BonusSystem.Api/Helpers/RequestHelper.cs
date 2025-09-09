@@ -61,6 +61,13 @@ public static class RequestHelper
         var userRole = GetUserRole(httpContext);
         return !string.IsNullOrEmpty(userRole) && userRole == role;
     }
+    
+    
+    public static bool IsUserInAnyRole(HttpContext httpContext, params string[] roles)
+    {
+        var userRole = GetUserRole(httpContext);
+        return !string.IsNullOrEmpty(userRole) && roles.Contains(userRole);
+    }
 
     /// <summary>
     /// Checks if the current user is a company user, store admin, or system admin

@@ -125,32 +125,32 @@ public static class ApiExtensions
 
     public static void UseApiMiddleware(this WebApplication app, IWebHostEnvironment env)
     {
-        // // Initialize database if using PostgreSQL
-        // using (var scope = app.Services.CreateScope())
-        // {
-        //     try
-        //     {
-        //         var context = scope.ServiceProvider.GetRequiredService<BonusSystemContext>();
-        //         var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+        // Initialize database if using PostgreSQL
+        using (var scope = app.Services.CreateScope())
+        {
+            try
+            {
+                var context = scope.ServiceProvider.GetRequiredService<BonusSystemContext>();
+                var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
 
-        //         // if (context.Database.GetPendingMigrations().Any())
-        //         // {
-        //         //     context.Database.Migrate();
-        //         //     logger.LogInformation("Database migrations applied successfully");
-        //         // }
+                if (context.Database.GetPendingMigrations().Any())
+                {
+                    context.Database.Migrate();
+                    logger.LogInformation("Database migrations applied successfully");
+                }
 
-        //         // var seeder = scope.ServiceProvider.GetRequiredService<DatabaseSeeder>();
-        //         // seeder.SeedAsync().Wait();
-        //     }
-        //     catch (Exception e)
-        //     {
-        //         var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
-        //         logger.LogError(e, "An error occured while applying migrations");
+                // var seeder = scope.ServiceProvider.GetRequiredService<DatabaseSeeder>();
+                // seeder.SeedAsync().Wait();
+            }
+            catch (Exception e)
+            {
+                var logger = scope.ServiceProvider.GetRequiredService<ILogger<Program>>();
+                logger.LogError(e, "An error occured while applying migrations");
 
-        //         if (env.IsDevelopment())
-        //             throw;
-        //     }
-        // }
+                if (env.IsDevelopment())
+                    throw;
+            }
+        }
 
         // Configure the HTTP request pipeline
         app.UseMiddleware<ExceptionHandlingMiddleware>();

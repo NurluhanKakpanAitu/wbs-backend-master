@@ -125,6 +125,14 @@ To remove volumes as well:
 docker-compose down -v
 ```
 
+## Recent Updates (api-role branch)
+
+### Role-Based Authorization Implementation
+- **Enhanced Security**: Implemented comprehensive role-based authorization system
+- **Database Migration Improvements**: Enhanced database migration handling for better deployment reliability
+- **Feature-Based Architecture**: Organized API endpoints by user roles with proper authorization guards
+- **JWT Integration**: Strengthened JWT authentication with role-based access control
+
 ## Development Guidelines
 
 1. Follow the Vertical Slice architecture pattern

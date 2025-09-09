@@ -1,4 +1,5 @@
 using System.Numerics;
+using BonusSystem.Api.Infrastructure.Extensions;
 using BonusSystem.Api.Infrastructure.Swagger;
 using BonusSystem.Core.Services.Interfaces;
 using BonusSystem.Shared.Dtos;
@@ -13,6 +14,7 @@ public static class AdminEndpoints
     {
         var group = app.MapGroup("/api/admin")
             .RequireAuthorization()
+            .RequireRoles(UserRole.SystemAdmin)
             .WithTags("Admin")
             .WithOpenApi();
 
